@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOVER</title>
+    <style>
+        div{
+            color: blue;
+            background-color: chartreuse;
+            width: 200px;
+            text-align: center;
+        }
+       div p{
+            color: red;
+        }
+        ul{
+            color:coral;
+            list-style: none;
+        }
+        div:hover{
+            background-color: aqua;
+            transition: 2s;
+        }
+        #box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        /* #box:hover{
+            transform: translateY(100px);
+            transition: 2s;
+        } */
+         /* #box:hover{
+            transform:rotatey(45deg);
+            transition: 2s;
+        } */
+          #box:hover{
+            transform: scaley(2);
+            transition: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>profile</h2>
+        <p>web developer</p>
+    </div>
+    <ul>
+        <li>water</li>
+        <li>bag</li>
+        <li>snacks</li>
+    </ul>
+    <div id="box">box</div>
+</body>
+</html>
