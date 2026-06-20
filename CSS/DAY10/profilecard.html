@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            color: rebeccapurple;
+            border: 1px solid white;
+            padding: 5px;
+            margin-inline: 150px;
+            flex-wrap: wrap;
+            box-shadow: 0 5px 10px blanchedalmond;
+            border-radius: 50px;
+            background-color: beige;
+            
+        }
+        .team{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .card{
+            border: 2px solid black;
+            width: 230px;
+            border-radius: 30px;
+            background-color:cadetblue;
+            box-shadow: 0 10px 15px black;
+            text-align: center;
+        }
+       .card img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><span>Meet With My Awesome Team</span></h1>
+    <div class="team">
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/048/216/761/small/modern-male-avatar-with-black-hair-and-hoodie-illustration-free-png.png" alt="Satyaban Panigrahy">
+            <h2>Satyaban panigrahy</h2>
+            <p>Full stack Developer</p>
+        </div>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/048/053/047/small/a-stylized-female-avatar-with-pink-and-blue-hair-png.png" alt="B.Bilwa Priya">
+            <h2>B.Bilwa Priya</h2>
+            <p>Data Scientist</p>
+        </div>
+        <div class="card">
+            <img src="https://www.pngarts.com/files/5/Cartoon-Avatar-PNG-Image-Background.png" alt="B/V MeghaShyam" >
+            <h2>B/V MeghaShyam</h2>
+            <p>Marketing Manager</p>
+        </div>
+    </div>
+</body>
+</html>
