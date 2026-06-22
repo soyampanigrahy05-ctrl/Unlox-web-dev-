@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color:azure;
+            margin: 0;
+        }
+        .shop{
+            display: grid;
+            grid-template-columns:repeat(auto-fit ,minmax(250px,1fr)) ;
+            gap: 10px;
+            
+
+        }
+        .product{
+            border: 2px solid black;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px black;
+            text-align: center;
+        }
+        .shop img{
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+            border-radius: 12px;
+        }
+        .shop button{
+            margin: 5px;
+            background-color: antiquewhite;
+            color: black;
+            border-radius: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="shop">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1757709608566-4b9fd41a7af5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXBob25lJTIwMTd8ZW58MHx8MHx8fDA%3D" alt="phone" />
+        <h2>phone</h2>
+        <p>Price: $599</p>
+        <button>Add to Cart</button>
+        <button>Shop Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1691439378545-dd6b35ff2f7b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Ftc3VuZyUyMHdhdGNofGVufDB8fDB8fHww" alt="Watch" />
+        <h2>Watch</h2>
+        <p>Price: $499</p>
+        <button>Add to Cart</button>
+        <button>Shop Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1705614055301-8e2612b354e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVhbG1lJTIwaGVhZHBob25lfGVufDB8fDB8fHww" alt="Headphones" />
+        <h2>Headphones</h2>
+        <p>Price: $99</p>
+        <button>Add to Cart</button>
+        <button>Shop Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop" />
+        <h2>Laptop</h2>
+        <p>Price: $899</p>
+        <button>Add to Cart</button>
+        <button>Shop Now</button>
+      </div>
+      <div class="product">
+        <img src="https://images.pexels.com/photos/8939267/pexels-photo-8939267.jpeg" alt="Groceries" />
+        <h2>Groceries</h2>
+        <p>Price: $50</p>
+        <button>Add to Cart</button>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </body>
+</html>
