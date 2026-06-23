@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <script>
+        // Data type 1:-
+        //1. string
+        let username="John"
+        console.log (typeof(username))
+        //2. number
+        let age=20
+        console.log(typeof(age))
+        //3. boolen value 
+        let loggedIn = true
+        console.log(typeof(loggedIn))
+        //4.Null
+        let  a=null
+        console.log(typeof(a))
+        let b
+        console.log(typeof(b))
+        //Data type 2 :-
+        //1. Array
+        let name=["John","Bob","Charli",true,12345]
+        console.log(typeof(name))
+        console.log(name)
+        console.log(name[1])
+        console.log(name[4])
+        //2. Object
+        let employee={
+            name: "John",
+            email:"John@gmail.com",
+            id:111111,
+            working:true
+        }
+        console.log(employee)
+        console.log(employee.id)
+        //3. Function
+        function billcalculator(){
+            let product1="Milk"
+            let product2="Egg"
+            let price1=30
+            let price2=7
+            let totalbill=price1+price2;
+            console.log("Total bill is ",totalbill)
+        }
+        billcalculator()
+    </script>
+</body>
+</html>
