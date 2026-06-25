@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <p id="myi">This is First Paragraph</p>
+    <p class="myc">index 0</p>
+    <p class="myc">index 1</p>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <div class="box">HTML</div>
+    <div class="box">Js</div>
+    <script>
+      //select Element
+      //1.getelementbyId()
+      const ele = document.getElementById("myi");
+      console.log(ele);
+      console.log(ele.textContent);
+      //2.className()
+      const abc = document.getElementsByClassName("myc");
+      console.log(abc);
+      console.log(abc[0].textContent);
+      console.log(abc[1].textContent);
+      //3.TagName()
+        const xyz=document.getElementsByTagName("p")
+        console.log(xyz)
+        console.log(xyz[3].textContent)
+        //4.queryselector()
+        const pqr=document.querySelector(".box")
+        console.log(pqr.textContent)
+        //5.queryselectorAll()
+         const mnp=document.querySelectorAll(".box")
+        console.log(mnp)
+        console.log(mnp[0])
+        console.log(mnp[1].textContent)
+    </script>
+  </body>
+</html>

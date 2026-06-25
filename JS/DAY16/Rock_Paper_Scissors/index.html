@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <button onclick="playGame('rock')">Rock</button>
+      <button onclick="playGame('paper')">Paper</button>
+      <button onclick="playGame('scissors')">Scissors</button>
+    </div>
+    <p id="result">Choose an option to start the Game</p>
+    <div class="scoreboard">
+      <p><strong>Scoreboard</strong></p>
+      <p>Wins: <span id="win-count">0</span></p>
+      <p>Losses: <span id="loss-count">0</span></p>
+      <p>Draws: <span id="draw-count">0</span></p>
+    </div>
+
+    <script>
+      let win = 0;
+      let losses = 0;
+      let draw = 0;
+
+      function playGame(userchoice) {
+        const choices = ["rock", "paper", "scissors"];
+        const computerchoice = choices[Math.floor(Math.random() * 3)];
+        let resultMsg = "";
+
+        if (userchoice === computerchoice) {
+          resultMsg = `It's a draw! You both picked ${userchoice}.`;
+          draw++;
+        } else if (
+          (userchoice === "rock" && computerchoice === "scissors") ||
+          (userchoice === "paper" && computerchoice === "rock") ||
+          (userchoice === "scissors" && computerchoice === "paper")
+        ) {
+          resultMsg = `You win! Your ${userchoice} beats ${computerchoice}.`;
+          win++;
+        } else {
+          resultMsg = `You lose! Computer's ${computerchoice} beats ${userchoice}.`;
+          losses++;
+        }
+        document.getElementById("result").innerHTML = resultMsg;
+        document.getElementById("win-count").innerHTML = win;
+        document.getElementById("loss-count").innerHTML = losses;
+        document.getElementById("draw-count").innerHTML = draw;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <p id="text">Hello Everyone</p>
+    <button id="btn">Login</button>
+    <div id="mydiv">this is a div</div>
+    <div id="box">box</div>
+    <script>
+      //update text content
+      const ele = document.getElementById("text");
+      ele.textContent = "HEllo Everyone How Are You ?";
+      const button = document.getElementById("btn");
+      button.textContent = "logout";
+      //innerHTML
+      const ele2 = document.getElementById("mydiv");
+      //ele2.innerHTML = "<h2>this is now heading</h2>";
+        ele2.innerHTML=`
+        <p>hello this ia a <mark>paragraph</mark> tag </p>
+        <em>Happy day</em>
+        <br>
+        <button>Smile</button>
+        `
+        //change style
+        const ele3=document.getElementById("box")
+        ele3.style.color="white"
+        ele3.style.backgroundColor="black"
+        ele3.style.border="2px solid green"
+        ele3.style.height="50px"
+        ele3.style.width="50px"
+    </script>
+  </body>
+</html>
