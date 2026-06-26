@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Js</title>
+  </head>
+  <body>
+    <script>
+      //1.template string
+      let name = "John";
+      //old way
+      console.log("Hello ", name);
+      //new way
+      console.log(`Hello ${name}`);
+
+      //2.Arrow function
+      //old way
+      function print() {
+        console.log("Hello world");
+      }
+      print();
+      //new way
+      const print1 = () => {
+        console.log("Hello world");
+      };
+      print1();
+
+      //setTimeout(set the timer function , time 1 second = 1000)
+      setTimeout(() => {
+        console.log("it will show after 3 seconds");
+      }, 3000);
+    </script>
+  </body>
+</html>
