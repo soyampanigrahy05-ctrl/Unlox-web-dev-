@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT</title>
+    <style>
+      #myDiv {
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        overflow: auto;
+      }
+      .content {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myb">Add To Cart</button>
+    <h2 id="msg"></h2>
+    <h1>Welcome to my page</h1>
+    <input type="text" id="myinput" placeholder="Type something....." />
+    <div id="myDiv">
+      <div class="content">Scroll Inside me</div>
+    </div>
+    <script>
+      const button = document.getElementById("myb");
+      const message = document.getElementById("msg");
+      //1.click
+      button.addEventListener("dblclick", function () {
+        message.textContent = "product added to cart";
+      });
+
+      const input = document.getElementById("myinput");
+      const div = document.getElementById("myDiv");
+      //2.keyup
+      input.addEventListener("keyup", function (e) {
+        console.log("key released-" + e.key);
+      });
+      //3.keydown
+      input.addEventListener("keydown", function (x) {
+        console.log("key released-" + x.key);
+      });
+      //4.change
+      input.addEventListener("change", function (y) {
+        console.log("Value of input -" + y.target.value);
+      });
+      //5.Mouse over
+      div.addEventListener("mouseover", function () {
+        div.style.backgroundColor = "deeppink";
+      });
+      //6.mouse out
+      div.addEventListener("mouseout", function () {
+        div.style.backgroundColor = "black";
+        div.style.color = "white";
+      });
+    </script>
+  </body>
+</html>

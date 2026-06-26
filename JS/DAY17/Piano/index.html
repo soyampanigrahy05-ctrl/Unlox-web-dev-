@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      .piano {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .key {
+        border: 1px solid black;
+        height: 200px;
+        width: 50px;
+        margin: 2px;
+        background-color: white;
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      .key:active{
+      background-color:lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Piano-event</h1>
+    <div class="piano">
+      <div class="key" data-note="C"></div>
+      <div class="key" data-note="D"></div>
+      <div class="key" data-note="E"></div>
+      <div class="key" data-note="F"></div>
+      <div class="key" data-note="G"></div>
+      <div class="key" data-note="A"></div>
+      <div class="key" data-note="B"></div>
+    </div>
+
+    <audio id="audio-C" src="./freesound_community-a3-101081.mp3"></audio>
+    <audio
+      id="audio-D"
+      src="./juanpablomorag-guitar-bachata-279210.mp3"
+    ></audio>
+    <audio
+      id="audio-E"
+      src="./sergequadrado-lucky-guitar-sound-379745.mp3"
+    ></audio>
+    <audio
+      id="audio-F"
+      src="./soulfuljamtracks-guitar-amp-buzz-3-fx-378583.mp3"
+    ></audio>
+    <audio
+      id="audio-G"
+      src="./soundsgoodmusic-guitar-note-375696 (1).mp3"
+    ></audio>
+    <audio id="audio-A" src="./soundsgoodmusic-guitar-note-375696.mp3"></audio>
+    <audio
+      id="audio-B"
+      src="./universfield-new-notification-043-493471.mp3"
+    ></audio>
+    <script>
+      const keys = document.querySelectorAll(".key");
+      keys.forEach(function (e) {
+        const note = e.getAttribute("data-note");
+        const audio = document.getElementById("audio-" + note);
+        e.addEventListener("click", function () {
+          audio.currentTime = 0;
+          audio.play();
+        });
+     
+      e.addEventListener("mouseover",function(){
+        e.style.backgroundcolor="lightblue"
+      })
+       
+       e.addEventListener("mouseout",function(){
+        e.style.backgroundcolor="white"
+      })
+       });
+    </script>
+  </body>
+</html>
