@@ -1,4 +1,4 @@
-const API_KEY = "ba75c41c";
+const API_KEY = "";
 const buttons = document.querySelectorAll("button");
 const moviescontainer = document.getElementById("movies-container");
 
