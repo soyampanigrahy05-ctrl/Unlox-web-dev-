@@ -1,0 +1,218 @@
+*{
+      margin: 0;
+      font-family: 'Times New Roman';
+      border: border-box;
+}
+.navbar{
+      height: 60px;
+      background-color: #01080e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+}
+.nav-logo{
+      height: 50px;
+      width: 113px;
+}
+.logo{
+      height: 50px;
+      width: 113px;
+      /* background-image: url(carry\ image/download.jpg); */
+      background-size:cover;
+}
+.border{
+      border: 2px solid transparent;
+}
+.border:hover{
+      border: 2px solid white;
+}
+.address1{
+color: #cccccc;
+font-size: 0.75rem;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 25px;
+}
+.address2{
+      color: #ffffff;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-left: 5px;
+}
+.add-icon{
+      display: flex;
+      align-items: center;
+}
+.nav-search{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #ffffff;
+      color: #0f1111;
+      width: 450px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 5px;
+}
+.nav-search:hover{
+      border:2px solid orange ;
+}
+.search-select{
+      background-color:#e6e6e6 ;
+      width: 50px;
+      color: #0f1111;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding-left: 5px;
+      height: 40px;
+      border: none;
+}
+.search-input{
+      width: 350px;
+      border: none;
+      font-size: 1rem;
+      padding: 7px 10px 10px 0px;
+}
+.search-icon{
+      align-items: center;
+      width: 45px;
+      display: flex;
+      background-color:#febd68 ;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      justify-content: center;
+      font-size: 1.3rem;
+}
+span{
+      font-size: 0.7rem;
+}
+.nav-sec{
+      font-size: 0.85rem;
+      font-weight: 750;
+}
+.nav-cart i{
+      font-size: 38px;
+}
+.nav-cart{
+      font-size: 0.9rem;
+      font-weight: 800;
+}
+.panel{
+      height: 40px;
+      background-color: #222f3d;
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: space-evenly;
+}
+.panel-option p{
+      display: inline;
+      margin-left: 80px;
+}
+.hero-section{
+      height: 400px;
+      background-size: cover;
+      background-image: url(carry\ image/heroimg.jpg);
+}
+.shop-section{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #e2e7e6; 
+      margin-top:5px;
+}
+.box{
+      border: 2px solid none;
+      height: 320px;
+      width: 22%;
+      background-color:white;
+      padding: 0px 10px 0px 10px;
+      margin: 10px;
+}
+.box1{
+      height: 300px;
+      background-size:cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:5px;
+      overflow: hidden;
+}
+.box p{
+      margin-bottom: 50px;
+      color:darkcyan;
+}
+.box2{
+      height: 300px;
+      background-size:cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:5px;
+      overflow: hidden;
+      margin-top: 28px;
+}
+.box3{
+      height: 300px;
+      background-size:cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:5px;
+      overflow: hidden;
+}
+.box4{
+      height: 300px;
+      background-size:cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap:5px;
+      overflow: hidden;
+}
+.footer-container {
+    background-color: #232f3e;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    width: 200px;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-col ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3a4553;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #dddddd;
+}
