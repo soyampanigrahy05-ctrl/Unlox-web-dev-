@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY</title>
+    <style>
+p{
+    color: blue;
+    font-family: cursive;
+    font-size: 11px;
+}
+p.none{
+    display: none;
+}
+p.block{
+    display: block;
+    background-color: antiquewhite;
+}
+p.inline{
+    display: inline;
+    background-color: aqua;
+}
+p.inline-block{
+    display: inline-block;
+    background-color: aquamarine;
+}
+.box{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: lightcoral;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+    <h1>DISPLAY </h1>
+    <hr>
+ <div>
+    <h2>display: none </h2>
+    This element will not be displayed on the page and will not take up any space.
+    <p class="none">this is a paragraph with display: none</p>
+ </div>
+ <hr>
+ <h2>display: block </h2>
+ <div>
+    This element will be displayed as a block-level element, taking up the full width available and starting on a new line.
+ <p class="block">This is a paragraph with display: block</p>
+</div>
+<hr>
+<h2>display: inline </h2>
+<div>
+    This element will be displayed as an inline element, taking up only as much width as necessary and allowing other elements to be displayed on the same line.
+    <p class="inline">This is a paragraph with display: inline</p>
+</div>
+<h2>display: inline-block </h2>
+<div>
+    This element will be displayed as an inline-block element, taking up only as much width as necessary but allowing other elements to be displayed on the same line.
+    <p class="inline-block">This is a paragraph with display: inline-block</p>
+</div>
+<hr>
+<h2>display: flex </h2>
+<div class="flex">
+    <!-- This element will be displayed as a flex container, allowing its child elements to be arranged in a flexible and responsive manner. -->
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+</div>
+</body>
+</html>

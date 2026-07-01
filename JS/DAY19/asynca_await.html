@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function getmovie(movieName) {
+        let url = `http://www.omdbapi.com/?apikey=ba75c41c&t=${movieName}`;
+        try {
+          let response = await fetch(url);
+          let data = await response.json();
+          console.log(data);
+          if (data.Response == "True") {
+            console.log(`Title is ${data.Title}`);
+            console.log(`Year :${data.Year}`);
+            console.log(`Poster link :${data.Poster}`);
+            console.log(`plot :${data.Plot}`);
+            console.log(`Released:${data.Released}`);
+            console.log(`Actors:${data.Actors}`);
+            console.log(`Awards:${data.Awards}`);
+            console.log(`Runtime:${data.Runtime}`);
+            console.log(`Genre:${data.Genre}`);
+            console.log(`Writer:${data.Writer}`);
+            console.log(`Rated:${data.Rated}`);
+          } else {
+            console.log("Movie not found");
+          }
+        } catch (error) {
+          console.log("Error Fetching movie", error);
+        }
+      }
+      getmovie("shiddat");
+      function ExtraTask() {
+        console.log("Hello Gyus Welcome To Qualifiers");
+      }
+      ExtraTask();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+export const products = [
+  { id: 1, name: "Premium Headphones", price: 199, category: "Electronics", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800", description: "Experience studio-quality sound with advanced noise cancellation and 40-hour battery life." },
+  { id: 2, name: "Luxury Smart Watch", price: 299, category: "Wearables", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800", description: "Stay connected in style. Tracks heart rate, sleep, and fitness activities with a sleek AMOLED display." },
+  { id: 3, name: "Mechanical Keyboard", price: 150, category: "Accessories", image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800", description: "Tactile and responsive switches for the ultimate typing and gaming experience with RGB lighting." },
+  { id: 4, name: "Designer Messenger Bag", price: 120, category: "Fashion", image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800", description: "Handcrafted from genuine leather. Perfect for carrying your laptop and essentials with elegance." },
+  { id: 5, name: "Ergonomic Office Chair", price: 450, category: "Furniture", image: "https://images.unsplash.com/photo-1505740106531-4243f3831c78?w=800", description: "Maximum comfort for long work hours with adjustable lumbar support and breathable mesh." },
+  { id: 6, name: "Portable Speaker", price: 85, category: "Electronics", image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800", description: "Deep bass and crystal clear sound in a compact, waterproof design for your outdoor adventures." },
+];

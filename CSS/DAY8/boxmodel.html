@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        body{
+            background-color:bisque;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+        }
+        .product{
+             border: 1px solid brown;
+             width: 400px;
+             overflow: hidden;
+             text-align: center;
+             padding: 20px;
+             margin: 30px;
+             border-radius: 20px;
+             box-shadow:0 0 12px blue ;
+             background-color: white;
+        }
+        .product:hover{
+            transform: scale(1.05);
+            transition: 0.5s;
+            background-color:antiquewhite;
+            color: coral;
+        }
+        .product img{
+            object-fit: cover;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+        }
+        button{
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/7151031/pexels-photo-7151031.jpeg" alt="mobile">
+        <h2>mobile</h2>
+        <p>100$</p>
+        <button>add to cart</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/12920900/pexels-photo-12920900.jpeg" alt="headphone">
+        <h2>headphone</h2>
+        <p>50$</p>
+        <button>add to cart</button>
+        <button>Buy now</button>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/20432893/pexels-photo-20432893.jpeg"
+         alt="Laptop">
+        <h2>Laptop</h2>
+        <p>500$</p>
+        <button>add to cart</button>
+        <button>Buy now</button>
+    </div>
+</body>
+</html>

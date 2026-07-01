@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+p{
+    color: yellowgreen;
+    font-size: 18px;
+}
+pre{
+    background-color: lightgray;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px blue;
+}

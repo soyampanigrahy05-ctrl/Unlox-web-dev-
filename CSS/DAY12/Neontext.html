@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Text</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: aqua;
+            animation: glow 1s infinite alternate ;
+        }
+        /* @keyframes glow {
+            from{
+                text-shadow: 0 0 8px aqua ,  0 0 15px orange ;
+            }
+            to{
+                text-shadow: 0 0 30px aqua , 0 0 45px orange;
+            }
+        } */
+         .box{
+            border: 2px solid white;
+            height: 200px;
+            width: 200px;
+            animation: glowbox 1.5s infinite alternate ease-in-out;
+         }
+         @keyframes glowbox {
+            from{
+                box-shadow: 0 0 5px aqua ,  0 0 10px aqua ;
+            }
+            to{
+                box-shadow: 0 0 20px orange , 0 0 40px orange;
+         }
+        }
+    </style>
+</head>
+<body >
+    <h1>Neon text Glow</h1>/
+    <div class="box"></div>
+</body>
+</html>

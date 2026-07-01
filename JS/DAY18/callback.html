@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback function to achieve asynchronous programming
+        //callback function is a function which is passed as an argument to another function and it is executed after the completion of that function
+        function Dohomework(subject, callback) {
+            console.log(`Doing homework for ${subject}`);
+            callback();
+        }
+        Dohomework("Maths", function() {
+            console.log("Homework completed");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY4</title>
+  </head>
+  <body>
+    <form
+      action="https://t4.ftcdn.net/jpg/14/93/92/51/360_F_1493925132_NHokx9Tp7tSEJnJqb0Up2P5Qcpx5jcL7.jpg" target="_blank"
+      method="get"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          placeholder="Enter your username"
+        />
+        <br />
+        <br />
+        <label>Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+        <br />
+        <br />
+        <label>Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+        />
+        <br />
+        <br />
+        <label>Phone:</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          required
+          placeholder="Enter your phone number"
+        />
+        <br />
+        <br />
+        <label>Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          required
+          placeholder="Enter your age"
+        />
+        <br />
+        <br />
+        <label>Date of Birth:</label>
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          required
+          max="2030-12-31"
+          min="2000-01-01"
+        />
+        <br />
+        <br />
+        <label>FILE:</label>
+        <input type="file" name="file" id="file" required placeholder="Choose a file" />
+        <br />
+        <br />
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male"  /><label for="male"
+          >Male</label
+        >
+        <input type="radio" name="gender" id="female" /><label for="female"
+          >Female</label
+        >
+        <input type="radio" name="gender" id="other" /><label for="other"
+          >Other</label
+        >
+        <br />
+        <br />
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies" id="reading" /><label
+          for="reading"
+          >Reading</label
+        >
+        <input type="checkbox" name="hobbies" id="traveling" /><label
+          for="traveling"
+          >Traveling</label
+        >
+        <input type="checkbox" name="hobbies" id="cooking" /><label
+          for="cooking"
+          >Cooking</label
+        >
+        <input type="checkbox" name="hobbies" id="sports" /><label for="sports"
+          >Sports</label
+        >
+        <input type="checkbox" name="hobbies" id="music" /><label for="music"
+          >Music</label
+        >
+        <br />
+        <br />
+        <label for="game">Select Your Game:</label>
+        <select name="game" id="game">
+          <optgroup>
+            <option>FREE FIRE</option>
+            <option disabled>PUBG</option>
+            <option>CLASH OF KINGDOMS</option>
+            <option>CALL OF DUTY</option>
+            <option selected>SELECT YOUR GAME</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your feedback"
+          required
+          cols="30"
+          rows="5" 
+        ></textarea>
+        <br />
+        <br />
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

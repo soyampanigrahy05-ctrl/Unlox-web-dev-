@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMATIONN</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: deeppink;
+        border: 2px solid black;
+        text-align: center;
+        animation-name: colorchange;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: deeppink;
+        border: 2px solid black;
+        border-radius: 50%;
+        text-align: center;
+        animation: bounce 5s infinite alternate ease-in-out ;
+      }
+      /* @keyframes colorchange{
+            from{background-color: deeppink;}
+
+            to{background-color: pink;}
+        } */
+      /* @keyframes colorchange{
+            0%{background-color: red;}
+            25%{background-color: yellow;}
+            50%{background-color: green;}
+            75%{background-color: skyblue;}
+            100%{background-color: black; color: white;}
+         } */
+      /* @keyframes colorchange {
+        15% {
+          transform: translatex(0);
+          background-color: red;
+        }
+        50% {
+          transform: translatex(400px);
+          background-color: pink;
+        }
+        100% {
+          transform: translatex(0);
+          background-color: deeppink;
+          border-radius: 50%;
+        } */
+        /* @keyframes bounce {
+            10%{transform: translatey(0);}
+            50%{transform: translatey(200px);}
+            100%{transform: translatey(0);}
+        } */
+      /* @keyframes bounce {
+        10%{opacity: 1;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+      } */
+    </style>
+  </head>
+  <body>
+    <strong
+      ><mark>ANIMATION EFFECTS GOES BACK TO ITS ORIGINAL SATAE.</mark></strong
+    >
+    <div class="box">BOX</div>
+    <div class="box2">box2</div>
+  </body>
+</html>
